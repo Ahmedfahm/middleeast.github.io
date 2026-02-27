@@ -42,49 +42,69 @@ function buildServiceCard(s) {
 
 function initServices() {
   const grid = document.getElementById("servicesGrid");
-  grid.innerHTML = services.map(buildServiceCard).join("");
+  if (grid) grid.innerHTML = services.map(buildServiceCard).join("");
 
   const select = document.getElementById("serviceSelect");
-  select.innerHTML = `<option value="" disabled selected>اختر الخدمة</option>` + services
-    .map(s => `<option value="${s.ar}">${s.ar} — ${s.en}</option>`)
-    .join("");
+  if (select) {
+    select.innerHTML =
+      `<option value="" disabled selected>اختر الخدمة</option>` +
+      services.map(s => `<option value="${s.ar}">${s.ar} — ${s.en}</option>`).join("");
+  }
 }
 
 function initMobileNav() {
   const burger = document.getElementById("burger");
   const mobileNav = document.getElementById("mobileNav");
+  if (!burger || !mobileNav) return;
 
   const setOpen = (open) => {
     burger.setAttribute("aria-expanded", String(open));
-    mobileNav.style.display = open ? "flex" : "none";
     mobileNav.setAttribute("aria-hidden", String(!open));
+
+    // استخدم class is-open (متوافق مع CSS النهائي)
+    mobileNav.classList.toggle("is-open", open);
+
+    // امنع سكرول الصفحة وقت فتح المينو (موبايل)
+    document.body.style.overflow = open ? "hidden" : "";
   };
 
-  let open = false;
-  burger.addEventListener("click", () => {
-    open = !open;
-    setOpen(open);
-  });
-
-  mobileNav.querySelectorAll("a").forEach(a => {
-    a.addEventListener("click", () => {
-      open = false;
-      setOpen(open);
-    });
-  });
-
+  // الحالة الابتدائية
   setOpen(false);
+
+  burger.addEventListener("click", () => {
+    const open = burger.getAttribute("aria-expanded") === "true";
+    setOpen(!open);
+  });
+
+  // اقفل المينو عند الضغط على أي لينك
+  mobileNav.querySelectorAll("a").forEach(a => {
+    a.addEventListener("click", () => setOpen(false));
+  });
+
+  // اقفلها لو المستخدم كبس Escape (ديسكتوب/موبايل بكيبورد)
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") setOpen(false);
+  });
 }
 
 function initFormToWhatsApp() {
   const form = document.getElementById("leadForm");
+  if (!form) return;
+
   form.addEventListener("submit", (e) => {
     e.preventDefault();
+
     const fd = new FormData(form);
     const name = (fd.get("name") || "").toString().trim();
     const phone = (fd.get("phone") || "").toString().trim();
     const service = (fd.get("service") || "").toString().trim();
     const notes = (fd.get("notes") || "").toString().trim();
+
+    // تحقق بسيط (بدون تعقيد)
+    if (!name || !phone || !service) {
+      alert("من فضلك اكتب الاسم ورقم الموبايل واختر الخدمة.");
+      return;
+    }
 
     const msg =
 `مرحبًا Middle East Cleaning 👋
@@ -100,7 +120,8 @@ function initFormToWhatsApp() {
 }
 
 function initYear() {
-  document.getElementById("year").textContent = new Date().getFullYear();
+  const el = document.getElementById("year");
+  if (el) el.textContent = new Date().getFullYear();
 }
 
 initServices();
