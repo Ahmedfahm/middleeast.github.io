@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <meta name="description" content="Middle East Cleaning - خدمات نظافة متكاملة للمنازل والشركات والمطاعم في مصر." />
   <title>Middle East Cleaning | خدمات نظافة احترافية</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
@@ -41,6 +42,7 @@
       </a>
 
       <nav class="nav" id="nav">
+        <a href="#about">من نحن</a>
         <a href="#services">الخدمات</a>
         <a href="#whyus">لماذا نحن</a>
         <a href="#work">أعمالنا</a>
@@ -59,6 +61,7 @@
     </div>
 
     <div class="mobileNav" id="mobileNav" aria-hidden="true">
+      <a href="#about">من نحن</a>
       <a href="#services">الخدمات</a>
       <a href="#whyus">لماذا نحن</a>
       <a href="#work">أعمالنا</a>
@@ -73,6 +76,7 @@
     <div class="container hero__inner">
       <div class="hero__content">
         <span class="badge">✨ نظافة بمعايير احترافية</span>
+
         <h1>
           Middle East Cleaning
           <span class="h1__sub">خدمات نظافة متكاملة للمنازل والشركات والمطاعم</span>
@@ -105,23 +109,48 @@
         </div>
       </div>
 
-    <div class="hero__visual">
-  <div class="heroCard">
-    <div class="heroCard__top">
-      <div class="heroCard__icon">📌</div>
-      <div>
-        <div class="heroCard__title">لحجز معاينة مجانية</div>
-        <div class="heroCard__sub">اتصل الآن أو راسلنا واتساب</div>
+      <!-- Hero Visual (مثل midsharq: كارت معاينة مجانية) -->
+      <div class="hero__visual">
+        <div class="heroCard">
+          <div class="heroCard__top">
+            <div class="heroCard__icon">📌</div>
+            <div>
+              <div class="heroCard__title">لحجز معاينة مجانية</div>
+              <div class="heroCard__sub">اتصل الآن أو راسلنا واتساب</div>
+            </div>
+          </div>
+
+          <div class="heroCard__bottom">
+            <a class="btn btn--full btn--lg" href="tel:+201023781330">📞 اتصل: 01023781330</a>
+            <a class="btn btn--ghost btn--full btn--lg" href="https://wa.me/201023781330" target="_blank" rel="noreferrer">💬 واتساب</a>
+            <div class="muted small">* المعاينة حسب نوع الخدمة والمكان</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- About (من نحن) -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="sectionHead">
+        <h2>من نحن</h2>
+        <p>شركة متخصصة في خدمات النظافة والتعقيم للمنازل والشركات والمطاعم داخل مصر.</p>
+      </div>
+
+      <div class="card">
+        <p>
+          نعتمد على فريق مدرّب ومعدات حديثة وخامات مناسبة لكل الأسطح، مع التزام كامل بالمواعيد
+          واهتمام بالتفاصيل للحصول على أفضل نتيجة.
+        </p>
+
+        <div class="serviceCard__actions" style="margin-top:12px;">
+          <a class="btn" href="#contact">اطلب معاينة مجانية</a>
+          <a class="btn btn--ghost" href="tel:+201023781330">اتصل الآن</a>
+        </div>
       </div>
     </div>
-
-    <div class="heroCard__bottom">
-      <a class="btn btn--full btn--lg" href="tel:+201023781330">📞 اتصل: 01023781330</a>
-      <a class="btn btn--ghost btn--full btn--lg" href="https://wa.me/201023781330" target="_blank" rel="noreferrer">💬 واتساب</a>
-      <div class="muted small">* المعاينة حسب نوع الخدمة والمكان</div>
-    </div>
-  </div>
-</div>
   </section>
 
   <!-- Services -->
@@ -132,6 +161,9 @@
         <p>اختر الخدمة اللي تحتاجها — وهنبعت لك عرض سعر سريع.</p>
       </div>
 
+      <!-- ملاحظة: خلتها Services List (أقرب لتقسيم midsharq)
+           لو script.js عندك بيولد كروت، سيشتغل عادي.
+           لو تحب تحويله لقائمة نصية بالكامل، ابعتلي script.js. -->
       <div class="grid" id="servicesGrid"></div>
 
       <div class="center">
@@ -189,16 +221,17 @@
     <div class="container">
       <div class="sectionHead">
         <h2>نماذج من أعمالنا</h2>
-        <p>استبدل الصور التالية بصور شغلك الحقيقي (قبل/بعد لو متاح).</p>
+        <p>بدّل الصور دي بصور شغلك الحقيقي (قبل/بعد لو متاح).</p>
       </div>
 
+      <!-- استبدل أسماء الصور حسب ملفاتك داخل assets/ -->
       <div class="gallery">
-        <div class="gallery__item"><div class="placeholder">صورة 1</div></div>
-        <div class="gallery__item"><div class="placeholder">صورة 2</div></div>
-        <div class="gallery__item"><div class="placeholder">صورة 3</div></div>
-        <div class="gallery__item"><div class="placeholder">صورة 4</div></div>
-        <div class="gallery__item"><div class="placeholder">صورة 5</div></div>
-        <div class="gallery__item"><div class="placeholder">صورة 6</div></div>
+        <div class="gallery__item"><img src="assets/work1.jpg" alt="عمل 1" style="width:100%;height:220px;object-fit:cover;border-radius:16px;display:block;"></div>
+        <div class="gallery__item"><img src="assets/work2.jpg" alt="عمل 2" style="width:100%;height:220px;object-fit:cover;border-radius:16px;display:block;"></div>
+        <div class="gallery__item"><img src="assets/work3.jpg" alt="عمل 3" style="width:100%;height:220px;object-fit:cover;border-radius:16px;display:block;"></div>
+        <div class="gallery__item"><img src="assets/work4.jpg" alt="عمل 4" style="width:100%;height:220px;object-fit:cover;border-radius:16px;display:block;"></div>
+        <div class="gallery__item"><img src="assets/work5.jpg" alt="عمل 5" style="width:100%;height:220px;object-fit:cover;border-radius:16px;display:block;"></div>
+        <div class="gallery__item"><img src="assets/work6.jpg" alt="عمل 6" style="width:100%;height:220px;object-fit:cover;border-radius:16px;display:block;"></div>
       </div>
     </div>
   </section>
@@ -329,8 +362,8 @@
       </div>
 
       <div class="footer__links">
+        <a href="#about">من نحن</a>
         <a href="#services">الخدمات</a>
-        <a href="#whyus">لماذا نحن</a>
         <a href="#contact">تواصل</a>
       </div>
 
