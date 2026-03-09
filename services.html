@@ -1,33 +1,94 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>الخدمات - Middle East</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="خدمات Middle East Cleaning" />
+  <title>الخدمات | Middle East Cleaning</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <header class="header">
+    <div class="container header__inner">
+      <a class="brand" href="index.html">
+        <div class="brand__logo"><span class="brand__mark">M</span></div>
+        <div class="brand__text">
+          <div class="brand__name">Middle East</div>
+          <div class="brand__sub">Cleaning</div>
+        </div>
+      </a>
 
-  <nav>
-    <a href="index.html">الرئيسية</a>
-    <a href="services.html">الخدمات</a>
-    <a href="about.html">من نحن</a>
-    <a href="works.html">أعمالنا</a>
-  </nav>
+      <nav class="nav">
+        <a href="index.html">الرئيسية</a>
+        <a href="services.html">الخدمات</a>
+        <a href="about.html">من نحن</a>
+        <a href="works.html">أعمالنا</a>
+      </nav>
+    </div>
+  </header>
 
-  <section>
-    <h1>خدماتنا</h1>
-    <p>نقدم خدمات تنظيف المنازل والمكاتب والسجاد والكنب بأعلى جودة.</p>
+  <section class="section">
+    <div class="container">
+      <div class="sectionHead">
+        <h2>الخدمات</h2>
+        <p>كل خدماتنا في صفحة واحدة بشكل منظم.</p>
+      </div>
 
-    <h2>تنظيف المنازل</h2>
-    <p>خدمة تنظيف شاملة للمنازل والشقق.</p>
+      <div class="whyGrid">
+        <div class="card">
+          <div class="card__icon">🏠</div>
+          <h3>تنظيف المنازل</h3>
+          <p>تنظيف شامل للشقق والمنازل باهتمام كامل بالتفاصيل.</p>
+        </div>
 
-    <h2>تنظيف المكاتب</h2>
-    <p>تنظيف احترافي للمكاتب والشركات.</p>
+        <div class="card">
+          <div class="card__icon">🏢</div>
+          <h3>تنظيف الشركات</h3>
+          <p>خدمات دورية ومميزة للمكاتب والشركات.</p>
+        </div>
 
-    <h2>تنظيف السجاد والكنب</h2>
-    <p>باستخدام معدات ومواد آمنة وفعالة.</p>
+        <div class="card">
+          <div class="card__icon">🍽️</div>
+          <h3>تنظيف المطاعم</h3>
+          <p>تنظيف احترافي يراعي النظافة والسلامة.</p>
+        </div>
+
+        <div class="card">
+          <div class="card__icon">🛋️</div>
+          <h3>تنظيف الكنب</h3>
+          <p>تنظيف عميق وإزالة الأتربة والبقع.</p>
+        </div>
+
+        <div class="card">
+          <div class="card__icon">🧼</div>
+          <h3>تنظيف السجاد</h3>
+          <p>تنظيف السجاد والموكيت بمواد مناسبة وآمنة.</p>
+        </div>
+
+        <div class="card">
+          <div class="card__icon">✨</div>
+          <h3>التعقيم</h3>
+          <p>تعقيم للمنازل والأماكن التجارية حسب الحاجة.</p>
+        </div>
+      </div>
+
+      <div class="center" style="margin-top: 24px;">
+        <a class="btn btn--lg" href="tel:+201023781330">احجز الآن</a>
+      </div>
+    </div>
   </section>
 
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__copy muted small">
+        © <span id="year"></span> Middle East Cleaning
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
