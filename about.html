@@ -1,24 +1,83 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>من نحن - Middle East</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="من نحن - Middle East Cleaning" />
+  <title>من نحن | Middle East Cleaning</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <header class="header">
+    <div class="container header__inner">
+      <a class="brand" href="index.html">
+        <div class="brand__logo"><span class="brand__mark">M</span></div>
+        <div class="brand__text">
+          <div class="brand__name">Middle East</div>
+          <div class="brand__sub">Cleaning</div>
+        </div>
+      </a>
 
-  <nav>
-    <a href="index.html">الرئيسية</a>
-    <a href="services.html">الخدمات</a>
-    <a href="about.html">من نحن</a>
-    <a href="works.html">أعمالنا</a>
-  </nav>
+      <nav class="nav">
+        <a href="index.html">الرئيسية</a>
+        <a href="services.html">الخدمات</a>
+        <a href="about.html">من نحن</a>
+        <a href="works.html">أعمالنا</a>
+      </nav>
+    </div>
+  </header>
 
-  <section>
-    <h1>من نحن</h1>
-    <p>شركة Middle East متخصصة في خدمات التنظيف باحترافية وجودة عالية، ونهدف إلى تقديم أفضل خدمة لعملائنا.</p>
+  <section class="section">
+    <div class="container">
+      <div class="sectionHead">
+        <h2>من نحن</h2>
+        <p>شركة متخصصة في خدمات النظافة والتعقيم داخل مصر.</p>
+      </div>
+
+      <div class="card">
+        <p>
+          نحن في Middle East Cleaning نقدم خدمات نظافة احترافية للمنازل والشركات والمطاعم،
+          ونعتمد على فريق مدرب ومعدات حديثة ومواد مناسبة لكل نوع من أنواع التنظيف.
+        </p>
+        <p>
+          هدفنا هو تقديم خدمة ممتازة، سرعة في التنفيذ، والتزام كامل بالمواعيد،
+          مع الاهتمام بالتفاصيل للحصول على أفضل نتيجة ممكنة.
+        </p>
+      </div>
+
+      <div class="whyGrid" style="margin-top: 24px;">
+        <div class="card">
+          <div class="card__icon">🎯</div>
+          <h3>رؤيتنا</h3>
+          <p>تقديم خدمة نظافة موثوقة واحترافية لكل عميل.</p>
+        </div>
+
+        <div class="card">
+          <div class="card__icon">🤝</div>
+          <h3>رسالتنا</h3>
+          <p>بناء ثقة طويلة المدى مع العملاء من خلال الجودة والالتزام.</p>
+        </div>
+
+        <div class="card">
+          <div class="card__icon">✅</div>
+          <h3>قيمنا</h3>
+          <p>النظافة، الدقة، الاحترام، والالتزام.</p>
+        </div>
+      </div>
+    </div>
   </section>
 
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__copy muted small">
+        © <span id="year"></span> Middle East Cleaning
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
