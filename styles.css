@@ -637,3 +637,17 @@ input:focus,select:focus,textarea:focus{
   height: 50px;
   display: block;
 }
+.brand__logo {
+  width: auto !important;
+  height: auto !important;
+  background: transparent !important;
+  border-radius: 0 !important;
+  display: flex;
+  align-items: center;
+}
+
+.brand__logo img {
+  height: 40px; /* تقدر تزودها لو عايز */
+  width: auto;
+  object-fit: contain;
+}
