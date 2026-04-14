@@ -641,6 +641,16 @@ input:focus,select:focus,textarea:focus{
   display: block;.fab__btn i{
   font-size: 24px;
 }
+.fab__btn{
+  width:60px;
+  height:60px;
+  border-radius:20px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:26px;
+  box-shadow:0 10px 24px rgba(0,0,0,.2);
+}
 
 /* واتساب */
 .fab__btn--wa{
@@ -658,4 +668,9 @@ input:focus,select:focus,textarea:focus{
 .fab__btn--ig{
   background: radial-gradient(circle at 30% 30%, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
   color:#fff;
+}
+
+/* حجم الأيقونات */
+.fab__btn i{
+  font-size:28px;
 }
