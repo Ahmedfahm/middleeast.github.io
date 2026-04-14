@@ -640,6 +640,9 @@ input:focus,select:focus,textarea:focus{
   object-fit: contain;
   display: block;
 }
+.fab__btn i{
+  font-size: 22px;
+}
 .fab__btn--call{
   background:#28a745;
   color:#fff;
