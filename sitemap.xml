@@ -1,20 +1,22 @@
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
-<loc>https://middleeast.top/</loc>
+<loc>https://middleeasttop.site/</loc>
 </url>
 
 <url>
-<loc>https://middleeast.top/services.html</loc>
+<loc>https://middleeasttop.site/services.html</loc>
 </url>
 
 <url>
-<loc>https://middleeast.top/about.html</loc>
+<loc>https://middleeasttop.site/about.html</loc>
 </url>
 
 <url>
-<loc>https://middleeast.top/works.html</loc>
+<loc>https://middleeasttop.site/works.html</loc>
 </url>
 
 </urlset>
+```
